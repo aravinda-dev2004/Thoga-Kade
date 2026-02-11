@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="614.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.placeOrder.PlaceOrderFormController">
+    <children>
+        <Text layoutX="397.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Order Form" wrappingWidth="198.65582275390625">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tblPlaceOrderView" layoutX="14.0" layoutY="162.0" prefHeight="302.0" prefWidth="626.0">
+            <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Item Code" />
+                <TableColumn fx:id="colDescription" prefWidth="135.2000503540039" text="Description" />
+                <TableColumn fx:id="colQuanitity" prefWidth="108.79998779296875" text="Quantity" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="102.4000244140625" text="Unit Price" />
+                <TableColumn fx:id="colDiscount" prefWidth="74.39996337890625" text="Discount" />
+                <TableColumn fx:id="colTotal" prefWidth="131.99990844726562" text="Total" />
+            </columns>
+        </TableView>
+        <Text layoutX="765.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Details">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Line endX="100.0" layoutX="827.0" layoutY="99.0" startX="-119.20001220703125" startY="7.62939453125E-6" />
+        <TextField fx:id="txtCustomerID" layoutX="710.0" layoutY="152.0" onAction="#txtCustomerIdOnAction" prefHeight="26.0" prefWidth="88.0" promptText="Customer ID" />
+        <TextField fx:id="txtName" layoutX="804.0" layoutY="152.0" prefHeight="26.0" prefWidth="126.0" promptText="Name" />
+        <Line endX="122.20001220703125" layoutX="808.0" layoutY="199.0" startX="-100.0" />
+        <TextField fx:id="txtItemCode" layoutX="824.0" layoutY="211.0" onAction="#txtItemCodeOnAction" prefHeight="26.0" prefWidth="105.0" promptText="Item Code" />
+        <TextField fx:id="txtDescription" layoutX="708.0" layoutY="246.0" prefHeight="26.0" prefWidth="221.0" promptText="Description" />
+        <TextField fx:id="txtUnitPrice" layoutX="708.0" layoutY="284.0" prefHeight="26.0" prefWidth="223.0" promptText="Unit Price" />
+        <TextField fx:id="txtQuantity" layoutX="708.0" layoutY="320.0" prefHeight="26.0" prefWidth="222.0" promptText="Quantity" />
+        <Button fx:id="btnAddToCart" layoutX="773.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="26.0" prefWidth="105.0" text="Add to Cart" />
+        <Label layoutX="709.0" layoutY="442.0" prefHeight="32.0" prefWidth="115.0" text="NET TOTAL : ">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblNetTotal" layoutX="869.0" layoutY="444.0" prefHeight="26.0" prefWidth="70.0" text="0.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnPlaceOrder" layoutX="773.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="26.0" prefWidth="105.0" text="Place Order" />
+        <Line endX="121.60003662109375" layoutX="813.0" layoutY="429.0" startX="-100.0" />
+        <TextField fx:id="txtDiscount" layoutX="846.0" layoutY="353.0" prefHeight="26.0" prefWidth="81.0" promptText="Discount" />
+      <TextField fx:id="txtOrderId" layoutX="754.0" layoutY="112.0" prefHeight="26.0" prefWidth="126.0" promptText="Order ID" />
+    </children>
+</AnchorPane>

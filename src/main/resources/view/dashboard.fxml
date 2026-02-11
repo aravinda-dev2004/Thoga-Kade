@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="419.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboard.DashBoardFormController">
+   <children>
+      <Text layoutX="233.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ThogaKade">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCustoemerManagement" layoutX="212.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnCustoemerManagementOnAction" prefHeight="42.0" prefWidth="274.0" text="Customer Management">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOrderManagement" layoutX="212.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnOrderManagementOnAction" prefHeight="42.0" prefWidth="274.0" text="Order Management">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnItemManagement" layoutX="212.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnItemManagementOnAction" prefHeight="42.0" prefWidth="274.0" text="Item Management">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOrderDetailsManagement" layoutX="212.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="42.0" prefWidth="274.0" text="Place Order">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
